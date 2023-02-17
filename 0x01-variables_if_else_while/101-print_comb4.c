@@ -2,29 +2,24 @@
 /**
 * main - Entry point
 *
-* Return: Always 0
+* Return: Always 0 (Success)
 */
 int main(void)
 {
-int a, b, c, d;
-for (a = '0' ; a <= '9' ; a++)
+int a, b, c;
+for (a = '0' ; a <= '7' ; a++)
 {
-for (b = '0' ; b <= '8' ; b++)
+for (b = a + 1 ; b <= '8' ; b++)
 {
-for (c = '0' ; c <= '9' ; c++)
-{
-for (d = '1' ; d <= '9' ; d++)
+for (c = b + 1 ; c <= '9' ; c++)
 {
 putchar(a);
 putchar(b);
-putchar(' ');
 putchar(c);
-putchar(d);
-if (a == '9' && b == '8' && c == '9' && d == '9')
+if (a == '7' && b == '8' && c == '9')
 continue;
 putchar(',');
 putchar(' ');
-}
 }
 }
 }
