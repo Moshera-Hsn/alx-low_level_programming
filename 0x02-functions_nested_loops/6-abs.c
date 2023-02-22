@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+/**
+* _abs - check code.
+* @num: An input intger
+* Description: computes the absolute value of an integer.
+*Return: -@num if @num<0, @num otherwise.
+*/
+int _abs(int num)
+{
+if (num < 0)
+return (-num);
+else
+return (num);
+}
